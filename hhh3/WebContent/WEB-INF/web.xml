@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>hhh</display-name>
+
+
+
+
+<servlet>
+		<servlet-name>HandleLogin</servlet-name>
+		<servlet-class>myservlet.control.HandleLogin</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HandleBuyGoods</servlet-name>
+		<servlet-class>myservlet.control.HandleBuyGoods</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HandleExit</servlet-name>
+		<servlet-class>myservlet.control.HandleExit</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HandleDelete</servlet-name>
+		<servlet-class>myservlet.control.HandleDelete</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HandleRegister</servlet-name>
+		<servlet-class>myservlet.control.HandleRegister</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PutGoodsToCar</servlet-name>
+		<servlet-class>myservlet.control.PutGoodsToCar</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>QueryAllRecord</servlet-name>
+		<servlet-class>myservlet.control.QueryAllRecord</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SearchByCondition</servlet-name>
+		<servlet-class>myservlet.control.SearchByCondition</servlet-class>
+	</servlet>
+	
+
+
+	<servlet-mapping>
+		<servlet-name>HandleLogin</servlet-name>
+		<url-pattern>/HandleLogin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HandleBuyGoods</servlet-name>
+		<url-pattern>/HandleBuyGoods</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HandleExit</servlet-name>
+		<url-pattern>/HandleExit</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HandleDelete</servlet-name>
+		<url-pattern>/HandleDelete</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HandleRegister</servlet-name>
+		<url-pattern>/HandleRegister</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PutGoodsToCar</servlet-name>
+		<url-pattern>/PutGoodsToCar</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>QueryAllRecord</servlet-name>
+		<url-pattern>/QueryAllRecord</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SearchByCondition</servlet-name>
+		<url-pattern>/SearchByCondition</url-pattern>
+	</servlet-mapping>
+	
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
